@@ -14,10 +14,12 @@
         <label>
             Email:
             <input type = 'text' email = 'email' th:value="${user.email}">
+            <span class="error" th:errors =${user.email}></span>
         </label>
         <label>
             Password:
             <input type = 'password' name = 'password'>
+            <span class="error" th:errors =${user.password}></span>
         </label>
 
         <label>
